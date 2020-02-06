@@ -1,0 +1,131 @@
+---
+title: "How distinct is gay neighborhood change?"
+subtitle: "https://ccgilroy.github.io/gayborhoods"
+author: "Connor Gilroy"
+date: "`r Sys.Date()`"
+output: 
+  xaringan::moon_reader:
+    css: [default, metropolis, metropolis-fonts]
+    lib_dir: libs
+    nature:
+      highlightStyle: tomorrow
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+# About me
+
+PhD student in **sociology** at the University of Washington
+
+methods: quantitative & computational
+
+topics: community and social change
+
+case: LGBTQ communities & populations
+
+[Include a headshot?]
+
+---
+# Motivating questions
+
+grounded in historical, ethnographic, interview research
+
+as well as in popular / media narratives
+
+---
+# Project overview
+
+Looking at patterns and 
+
+---
+# Challenges
+
+---
+# Approach
+
+---
+# Linking data
+
+Webscrape gay bar listings from 2007 (GayCities.com + Wayback Machine)
+
+Geocode addresses to latitude & longitude (Google Maps API)
+
+Geocode lat/lon to Census tracts
+
+Identify largest clusters of tracts with bars
+
+Curate cities and neighborhoods qualitatively
+
+[show results of this]
+
+28 neighborhoods in 23 cities
+
+[show map of two]
+
+---
+# Outcomes
+
+7 indicators of social, demographic, and economic change:
+
+[list]
+
+American Community Survey, 5-year
+
+2006-2010 and 2011-2015
+
+---
+# Results
+
+Descriptive: 
+
+Statistical: 
+
+-> what's a fair comparison?
+
+linear regression
+
+matched tracts (Mahalanobis distance)
+
+---
+# Results: patterns
+
+[figure of patterns]
+
+---
+# Results: variations
+
+[figure of variations]
+
+---
+# Results: models
+
+[coefficient plot]
+
+---
+# Conclusions
+
+What are the stakes here? What's the potential impact?
+
+
+Changes: local and specialized
+
+---
+# Extensions
+
+Moar data
+
+- historical
+  - Decennial Census (2000 -> 2010)
+  - Other listings of gay institutions ()
+
+Moar stats
+
+- rabbit hole vs rigor
+
+we'd like to know about people too, right
+
+in my dream world, the American Community Survey would ask a question about sexual orientation. 
+
+only good for answering similar questions in the future
+
+why bother? what are the stakes of getting this right
