@@ -25,102 +25,208 @@ class: center, middle, inverse, title-slide
 
 # About me
 
+.left-column[
+
+![](http://students.washington.edu/cgilroy/img/ccg.jpg)
+
+]
+
+.right-column.font150[
+
 PhD student in **sociology** at the University of Washington
 
-methods: quantitative &amp; computational
+- methods: quantitative &amp; computational
 
-topics: community and social change
+- topics: community and social change
 
-case: LGBTQ communities &amp; populations
+- case: LGBTQ communities &amp; populations
 
-[Include a headshot?]
-
----
-# Motivating questions
-
-
+]
 
 ---
 # Project overview
 
+What's happening to gay neighborhoods across the United States, and why?
+
+Examine patterns and variations in gayborhood trajectories in a broad, comparative way
+
+Context: MA thesis, single-authored project, currently revising for publication
+
+---
+# Motivation
+
+### Are gay neighborhoods really disappearing? 
+
+Historical, ethnographic, &amp; interview research provides evidence for **cultural and institutional changes** in some gay enclaves .font60[(e.g. *There Goes the Gayborhood?* (Ghaziani 2014), *Boystown* (Orne 2017))]
+
+Popular &amp; media narratives suggest **assimilation and gentrification** as culprits, linking cultural changes to **demographic and economic** factors
+
+This framing implies processes *unique to* gay neighborhoods are at play
+
 ---
 # Challenges
+
+.font200[
+
+No systematic way to define and identify gay neighborhoods
+
+No data on LGBTQ populations at small geographies (and data on same-sex couple households aren't adequate)
+
+]
 
 ---
 # Approach
 
+.font200[
+
+1. Define and identify gay neighborhoods
+
+2. Examine their characteristics over time
+
+3. Compare them to other places
+
+]
+
+
 ---
-# Linking data
+# Approach
 
-Webscrape gay bar listings from 2007 (GayCities.com + Wayback Machine)
+1. *Define and identify gay neighborhoods*
 
-Geocode addresses to latitude &amp; longitude (Google Maps API)
+	→ clusters of gay bars from a 2007 digital archive
+	
+2. *Examine their characteristics over time*
 
-Geocode lat/lon to Census tracts
+	→ American Community Survey data from 2006-2015
+	
+3. *Compare them to other places*
 
-Identify largest clusters of tracts with bars
+  → linear models of Census tracts, matched within cities
 
-Curate cities and neighborhoods qualitatively
+---
+# Identifying gayborhoods
 
-[show results of this]
+- Webscrape gay bar listings from 2007 (GayCities.com + Wayback Machine)
 
-28 neighborhoods in 23 cities
+- Geocode addresses to latitude &amp; longitude (Google Maps API)
 
-[show map of two]
+- Geocode lat/lon to Census tracts
+
+- Identify largest clusters of tracts with bars (spatial adjacency)
+
+- Curate cities and neighborhoods (qualitatively)
+
+From 840 bars in 57 places
+
+to 488 Census tracts
+
+to 28 neighborhoods in 23 cities
+
+---
+# Examples
+
+.pull-left.center[
+
+![:scale 50%](img/seattle.png)
+
+Capitol Hill,  
+Seattle
+
+]
+
+.pull-right.center[
+
+![:scale 50%](img/chicago.png)
+
+Boystown and Andersonville,  
+Chicago
+
+]
 
 ---
 # Outcomes
 
-7 indicators of social, demographic, and economic change:
+7 indicators of social, demographic, and economic change, from the American Community Survey (5-year) for 2006-2010 and 2011-2015
 
-[list]
+general measures of urban change: 
 
-American Community Survey, 5-year
+- proportion college-educated
+- median income
+- median rent
+- proportion white
 
-2006-2010 and 2011-2015
+measures specific to gender and sexuality: 
+
+- proportion male
+- proportion different-sex married-couple households
+
+a necessary control:
+
+- population density 
 
 ---
-# Results
+# Analysis
 
-Descriptive: 
+### Descriptive: 
 
-Statistical: 
+Visualize the trajectories of gay neighborhoods, and compare them to each other
 
--&gt; what's a fair comparison?
+### Statistical:
 
-linear regression
+Compare gay neighborhoods to other places using linear models of the 7 measures of change:
 
-matched tracts (Mahalanobis distance)
+`$$x_{2011-2015} = \alpha + \beta_1 gay + \beta_2 x_{2006-2010} +X\beta_{controls} + \epsilon$$`
+
+What's a fair comparison? Two methods beyond linear regression: 
+
+1. **matching tracts** on 2006-2010 covariates (using Mahalanobis distance)
+2. **multilevel models** (varying intercepts by city)
 
 ---
 # Results: patterns
 
+![](img/inc_education_2way.png)
+
 ---
 # Results: variations
+
+![](img/male_married_colored.png)
 
 ---
 # Results: models
 
-[coefficient plot]
+![](img/gay_coefficient_plot_wide.png)
 
 ---
 # Conclusions
 
-What are the stakes here? What's the potential impact?
+Demographic and economic change in gay neighborhoods is **not intense or widespread**
 
+Observed changes are **largely not distinct** from other urban places---change in education levels excepted
 
-Changes: local and specialized
+Gayborhoods are subject to the same urban processes as other places---they differ in their **symbolic impact** for LGBTQ people
+
+---
+# Implications
+
+*What are the stakes of this work?*
+
+These places deeply matter to groups of people, who fear losing them; this work shows that's not happening everywhere
+
+*Where should we look to explain what's happening to gay enclaves?*
+
+Changes often seem more about local urban forces; policies aimed at mitigating change likely need to be specialized
 
 ---
 # Extensions
 
-Moar data
+**Data**
 
 - historical
   - Decennial Census (2000 -&gt; 2010)
-  - Other listings of gay institutions ()
+  - Other listings of gay institutions (e.g., the Damron travel guides)
 
-Moar stats
+**Statistical**
 
 - rabbit hole vs rigor
 
@@ -134,6 +240,7 @@ why bother? what are the stakes of getting this right
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="js/macros.js"></script>
 <script>var slideshow = remark.create({
 "highlightStyle": "tomorrow",
 "highlightLines": true,
