@@ -1,0 +1,22 @@
+.divide-slide {
+    background: linear-gradient(
+    to right, 
+    #23373B 0%, 
+    #23373B 50%, 
+    #FAFAFA 50%, 
+    #FAFAFA 100%
+  );
+}
+
+img[alt=me] {
+  border-radius: 100%;
+}
+
+.inverse-light {
+  background-color: rgba(35,55,59, .8);
+  text-shadow: none;
+}
+
+.float-right {
+  float: right;
+}

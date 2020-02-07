@@ -10,6 +10,7 @@
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/metropolis.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/metropolis-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
@@ -27,57 +28,99 @@ class: center, middle, inverse, title-slide
 
 .left-column[
 
-![](http://students.washington.edu/cgilroy/img/ccg.jpg)
+&lt;br/&gt;&lt;br/&gt;
+
+![me](http://students.washington.edu/cgilroy/img/ccg.jpg)
 
 ]
 
-.right-column.font150[
+.right-column.font130[
 
 PhD student in **sociology** at the University of Washington
 
-- methods: quantitative &amp; computational
+- **methods:** quantitative &amp; computational
 
-- topics: community and social change
+- **topics:** community and social change
 
-- case: LGBTQ communities &amp; populations
+- **case:** LGBTQ communities &amp; populations
 
 ]
 
 ---
 # Project overview
 
-What's happening to gay neighborhoods across the United States, and why?
+.font130[
 
-Examine patterns and variations in gayborhood trajectories in a broad, comparative way
+### What's happening to gay neighborhoods across the United States, and why?
 
-Context: MA thesis, single-authored project, currently revising for publication
+To answer, I examine patterns and variations in gayborhood trajectories in a broad, comparative way
+
+]
+
+&lt;br/&gt;
+
+&lt;img src="img/rainbow_pylon.jpg" style="width: 25%; float:right" /&gt;
+
+**Context:** 
+
+
+- MA thesis (Distinguished Thesis Award, 2019)
+- single-authored project
+- presented at a national conference (ASA)
+- currently revising for publication
 
 ---
+
 # Motivation
+
+.font120[
 
 ### Are gay neighborhoods really disappearing? 
 
-Historical, ethnographic, &amp; interview research provides evidence for **cultural and institutional changes** in some gay enclaves .font60[(e.g. *There Goes the Gayborhood?* (Ghaziani 2014), *Boystown* (Orne 2017))]
+Historical, ethnographic, &amp; interview research provides evidence for **cultural and institutional changes** in some gay enclaves  
+.font50[e.g. *There Goes the Gayborhood?* (Ghaziani 2014), *Boystown* (Orne 2017)]
 
 Popular &amp; media narratives suggest **assimilation and gentrification** as culprits, linking cultural changes to **demographic and economic** factors
 
 This framing implies processes *unique to* gay neighborhoods are at play
 
----
-# Challenges
+]
 
-.font200[
+.center[![:scale 80%](img/caphill_queered_cropped.png)]
+
+
+---
+
+class: clear, divide-slide, middle
+
+.pull-left.inverse.font200.center[ 
+&lt;br/&gt;
+.font150[Challenges]
+
+]
+
+.pull-right.font130[
 
 No systematic way to define and identify gay neighborhoods
 
-No data on LGBTQ populations at small geographies (and data on same-sex couple households aren't adequate)
+&lt;br/&gt;
+
+No data on LGBTQ populations at small geographies  
+(and data on same-sex couple households aren't adequate)
 
 ]
 
 ---
-# Approach
 
-.font200[
+class: clear, divide-slide, middle
+
+.pull-left.inverse.font200.center[ 
+&lt;br/&gt;
+.font150[Approach]
+
+]
+
+.pull-right.font130[
 
 1. Define and identify gay neighborhoods
 
@@ -91,39 +134,71 @@ No data on LGBTQ populations at small geographies (and data on same-sex couple h
 ---
 # Approach
 
+.font120[
+
 1. *Define and identify gay neighborhoods*
 
-	→ clusters of gay bars from a 2007 digital archive
+	**&amp;rarr;** clusters of gay bars from a 2007 digital archive
 	
 2. *Examine their characteristics over time*
 
-	→ American Community Survey data from 2006-2015
+	**&amp;rarr;** American Community Survey data from 2006-2015
 	
 3. *Compare them to other places*
 
-  → linear models of Census tracts, matched within cities
+  **&amp;rarr;** linear models of Census tracts, matched within cities
+
+]
+
 
 ---
+class: clear
+background-image: url("img/gaycities2007.png")
+background-position: center
+background-size: contain
+
+---
+class: clear
+background-image: url("img/map_all_cities.png")
+background-position: center
+background-size: contain
+
+---
+
 # Identifying gayborhoods
 
-- Webscrape gay bar listings from 2007 (GayCities.com + Wayback Machine)
+.left-column.center[
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+**840** bars in **57** places  
+&amp;darr;  
+**488** Census tracts  
+&amp;darr;  
+**28** neighborhoods in **23** cities
 
-- Geocode addresses to latitude &amp; longitude (Google Maps API)
+]
 
-- Geocode lat/lon to Census tracts
+.right-column.center[
 
-- Identify largest clusters of tracts with bars (spatial adjacency)
+Webscrape gay bar listings from 2007  
+(GayCities.com + Wayback Machine)  
+&amp;darr;  
+Geocode addresses to latitude &amp; longitude  
+(Google Maps API)  
+&amp;darr;  
+Geocode lat/lon to Census tracts  
+&amp;darr;  
+Identify largest clusters of tracts with bars  
+(spatial adjacency)  
+&amp;darr;  
+Curate cities and neighborhoods  
+(qualitatively)
 
-- Curate cities and neighborhoods (qualitatively)
-
-From 840 bars in 57 places
-
-to 488 Census tracts
-
-to 28 neighborhoods in 23 cities
+]
 
 ---
 # Examples
+
+&lt;br/&gt;
 
 .pull-left.center[
 
@@ -146,7 +221,9 @@ Chicago
 ---
 # Outcomes
 
-7 indicators of social, demographic, and economic change, from the American Community Survey (5-year) for 2006-2010 and 2011-2015
+### 7 indicators of social, demographic, and economic change
+
+From the American Community Survey (5-year) for 2006-2010 and 2011-2015
 
 general measures of urban change: 
 
@@ -200,14 +277,20 @@ What's a fair comparison? Two methods beyond linear regression:
 ---
 # Conclusions
 
+.font120[
+
 Demographic and economic change in gay neighborhoods is **not intense or widespread**
 
-Observed changes are **largely not distinct** from other urban places---change in education levels excepted
+Observed changes are **largely not distinct** from other urban places — change in education levels excepted
 
-Gayborhoods are subject to the same urban processes as other places---they differ in their **symbolic impact** for LGBTQ people
+Gayborhoods are subject to the same urban processes as other places — they differ in their **symbolic impact** for LGBTQ people
+
+]
 
 ---
 # Implications
+
+.font120[
 
 *What are the stakes of this work?*
 
@@ -217,26 +300,26 @@ These places deeply matter to groups of people, who fear losing them; this work 
 
 Changes often seem more about local urban forces; policies aimed at mitigating change likely need to be specialized
 
+]
+
 ---
 # Extensions
 
-**Data**
+### Historical data
 
-- historical
-  - Decennial Census (2000 -&gt; 2010)
-  - Other listings of gay institutions (e.g., the Damron travel guides)
+- the decennial Census (2000 &amp;rarr; 2010)
+- other listings of gay institutions (e.g., the Damron travel guides)
 
-**Statistical**
+Ideally, the ACS would ask a question about sexual orientation — but that's only good for answering similar questions in the future
 
-- rabbit hole vs rigor
+### Statistical improvements
 
-we'd like to know about people too, right
+- Poisson regression of rates
+- Temporal modeling can be improved; spatial component is fine
 
-in my dream world, the American Community Survey would ask a question about sexual orientation. 
+### Perceptions of gay neighborhoods
 
-only good for answering similar questions in the future
-
-why bother? what are the stakes of getting this right
+Survey people in different cities: where do they think gay neighborhoods are? How do they know? What are their perceptions of change?
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
